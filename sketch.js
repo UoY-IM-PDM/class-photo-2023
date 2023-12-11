@@ -10,14 +10,14 @@ let newMushroom;
 
 function setup() {
     createCanvas(1000, 600);
-    newMushroom = new Mushroom;
+    newMushroom = new Mushroom_jb3027;
 }
 
 function draw() {
     newMushroom.draw();
 }
 
-class Mushroom {
+class Mushroom_jb3027 {
     #centerX;
     #centerY;
 
