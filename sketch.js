@@ -105,6 +105,7 @@ class RobotAbi {
      */
     draw() {
         strokeWeight(1);
+        stroke(0);
         rectMode(CENTER);
         this.#head();
         this.#body();
