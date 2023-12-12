@@ -11,6 +11,7 @@ function draw() {
     background(255);
     robot.draw();
     newMushroom.draw();
+    knightIla(210, 500);
     manJo ()
     CatGio();
 }
@@ -284,4 +285,61 @@ function CatGio(){
     //nose
             fill(245, 196, 243);
             rect(842,372,20,10,20);
+}
+
+function knightIla(centerX, centerY) {
+rectMode(CENTER);
+    strokeWeight(3);
+
+    //helmet back
+    fill(110);
+    quad(centerX-35, centerY-105, centerX+35, centerY-105, centerX+25, centerY-80, centerX-25, centerY-80);
+
+    //head
+    fill(204, 153, 114);
+    rect(centerX, centerY-100, 50, 65, 30);
+        //face
+        line(centerX-5, centerY-100, centerX-20, centerY-104); //r_brow
+        line(centerX+5, centerY-100, centerX+20, centerY-104); //l_brow
+        line(centerX-5, centerY-75, centerX+10, centerY-80); //mouth
+
+    //helmet front
+    fill(110);
+    strokeJoin(BEVEL);
+    quad(centerX-40, centerY-100, centerX, centerY-115, centerX+40, centerY-100, centerX, centerY-145);
+
+    //body
+    fill(110);
+    rect(centerX, centerY, 90, 120, 10);
+
+    // right arm
+    fill(110);
+    rect(centerX-80, centerY-50, 70, 25, 10); //upper arm
+        rect(centerX-145, centerY-50, 70, 25, 10); //lower arm
+    circle(centerX-45, centerY-50, 35); //shoulder
+        circle(centerX-175, centerY-50, 30); //hand
+            //spear???
+            fill(60, 50, 10);
+            rect(centerX-175, centerY-50, 15, 350);
+                fill(110);
+                triangle(centerX-175, centerY-270, centerX-160, centerY-210, centerX-190, centerY-210);
+
+    //left arm
+    fill(110);
+    rect(centerX+80, centerY-50, 70, 25, 10); //upper arm
+        rect(centerX+140, centerY-50, 70, 25, 10); //lower arm
+    circle(centerX+45, centerY-50, 35); //shoulder
+        circle(centerX+175, centerY-50, 30); //hand
+
+    //right leg
+    fill(110);
+    rect(centerX-25, centerY+95, 40, 80, 10); //upper leg
+        rect(centerX-25, centerY+170, 40, 80, 10); //lower leg
+            rect(centerX-30, centerY+210, 55, 30, 10); //foot
+
+    //left leg
+    fill(110);
+    rect(centerX+25, centerY+95, 40, 80, 10); //upper leg
+        rect(centerX+25, centerY+170, 40, 80, 10); //lower leg
+            rect(centerX+30, centerY+210, 55, 30, 10); //foot
 }
