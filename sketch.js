@@ -3,7 +3,7 @@ let robot;
 
 function setup() {
     createCanvas(1000, 600);
-    newMushroom = new Mushroom_jb3027;
+    newMushroom = new Mushroom_jb3027();
     robot = new RobotAbi(100, 180, color(random(255), random(255), random(255)));
 }
 
