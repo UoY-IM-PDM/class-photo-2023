@@ -8,6 +8,7 @@ function setup() {
 }
 
 function draw() {
+    background(255);
     robot.draw();
     newMushroom.draw();
 }
@@ -19,7 +20,6 @@ function draw() {
  * Your function or class should set all draw modes needed to draw your character (e.g. fill, stroke weight and colour, rectMode)
  * Finally, call your function / class in draw to add your character to the photo
  */
-
 class Mushroom_jb3027 {
     #centerX;
     #centerY;
