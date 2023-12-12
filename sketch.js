@@ -12,6 +12,7 @@ function draw() {
     robot.draw();
     newMushroom.draw();
     manJo ()
+    CatGio();
 }
 
 /**
@@ -224,4 +225,63 @@ function manJo () {
     rect(580, 261, 6, 50)
     fill (191, 191, 187)
     circle(520, 200, 8)
+}
+
+function CatGio(){
+    //body
+    rectMode(CENTER);
+        noStroke(0)
+        fill(153,153,153,255);
+        rect(800,400,130,80);
+
+        fill(179,179,179,255)
+        rect(832,400,65,80)
+
+    //tail
+    rectMode(CORNER);
+        fill(153,153,153,255)
+        rect(700,360,36,16)
+
+    //head
+        rectMode(CORNER);
+            noStroke(0);
+            fill(204,204,204,255);
+            rect(765,290,130,110);
+
+    //ear
+        rectMode(CORNER)
+        //ear Left
+            rect(765,260,36,40,10)
+        //ear Right
+            rect(848,260,36,40,10)
+        
+    //first leg
+        fill(179,179,179,255);
+        rect(735,440,24,20)
+    //middle leg
+        rect(788,440,24,20)
+    //right last leg
+        rect(841,440,24,20)
+
+    //eye Left
+        rectMode(CORNER)
+            //black eye Left
+            fill(0);
+            rect(810,340,30,30)
+            //white
+            fill(255)
+            rect(810,340,15,15)
+
+    //eye Right
+        rectMode(CORNER)
+        //black eye Left
+            fill(0);
+            rect(860,340,30,30)
+        //white
+            fill(255);
+            rect(860,340,15,15);
+
+    //nose
+            fill(245, 196, 243);
+            rect(842,372,20,10,20);
 }
