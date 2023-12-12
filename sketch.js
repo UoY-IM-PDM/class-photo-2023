@@ -11,6 +11,7 @@ function draw() {
     background(255);
     robot.draw();
     newMushroom.draw();
+    manJo ()
 }
 
 /**
@@ -176,4 +177,51 @@ class RobotAbi {
         rect(this.x - 20, this.y + 130, 10, 80);
         arc(this.x - 20, this.y + 170, 30, 20, PI, TWO_PI, CHORD);
     }
+}
+
+function manJo () {
+    rectMode(CENTER);
+    strokeWeight (1)
+    stroke(210)
+    fill(240)
+    rect(600, 220, 50, 80);
+    noStroke()
+    fill(181, 33, 52);
+    rect(600, 220, 10, 80);
+    rect(600, 175, 10, 10);
+    stroke(210)
+    fill(240);
+    rect(600, 151, 45, 50);
+    fill(235, 228, 188);
+    rect(600, 151, 35, 34);
+    fill(0);
+    circle(590, 149, 7)
+    circle(610, 149, 7)
+    fill(240)
+    rect(587, 280, 10, 40)
+    rect(613, 280, 10, 40)
+    rect(550, 190, 50, 10)
+    rect(650, 190, 50, 10)
+    fill(0)
+    rect(587, 310, 13, 20)
+    rect(613, 310, 13, 20)
+    rect(617, 315, 20, 10)
+    rect(590, 315, 20, 10)
+    fill(435, 228, 188)
+    rect(520, 190, 20, 13)
+    rect(680, 190, 20, 13)
+    fill(181, 33, 52);
+    noStroke()
+    rect(600, 200, 50, 10)
+    stroke(150)
+    fill (191, 191, 187)
+    rect(520, 150, 5, 60)
+    triangle(520, 110, 517.5, 120, 522.5, 120)
+    fill(92, 68, 20)
+    rect(520, 190, 5, 15)
+    rect(520, 183, 15, 5)
+    rect(600, 240, 50,7)
+    rect(580, 261, 6, 50)
+    fill (191, 191, 187)
+    circle(520, 200, 8)
 }
