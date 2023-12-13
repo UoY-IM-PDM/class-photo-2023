@@ -364,6 +364,7 @@ class Carrot {
         this.leaf();
         this.arms();
         this.legs();
+        ellipseMode(CENTER);
     }
 
     body() {
